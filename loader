@@ -1,1 +1,12 @@
+getgenv().AmethystFarmLoaded = nil
 
+if getgenv().AmethystFarmLoaded then
+    return
+end
+getgenv().AmethystFarmLoaded = true
+
+if game.PlaceId == 2788229376 then
+    loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/957177b0fd71b05bd5111a61f2e00a249b779c94062eddf20fb7ac7a9229a20e/download"))()
+else
+    warn("Game not supported")
+end
